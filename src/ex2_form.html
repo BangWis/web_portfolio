@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มรับสมัครศิษย์เก่า IT + IS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FAF3E0] font-serif text-[#4E342E]">
+    <div class="container mx-auto p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-[#D32F2F] mb-4">แบบฟอร์มรับสมัครศิษย์เก่า IT + IS</h1>
+            <p class="text-[#6D4C41]">กรุณากรอกข้อมูลให้ครบถ้วนและถูกต้อง</p>
+            <div class="border-t-2 border-[#8D6E63] w-32 mx-auto mt-4"></div>
+        </header>
+
+        <form action="#" method="post" enctype="multipart/form-data" class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="mb-6">
+                <label for="fullName" class="block text-[#5D4037] font-medium">ชื่อ-สกุล:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="ระบุชื่อ-สกุลของคุณ" required class="w-full mt-2 p-3 border border-[#8D6E63] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D32F2F]">
+            </div>
+            <div class="mb-6">
+                <label for="studentID" class="block text-[#5D4037] font-medium">รหัสนักศึกษา:</label>
+                <input type="text" id="studentID" name="studentID" placeholder="ระบุรหัสนักศึกษา" required class="w-full mt-2 p-3 border border-[#8D6E63] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D32F2F]">
+            </div>
+            <div class="mb-6">
+                <label for="gender" class="block text-[#5D4037] font-medium">เพศ:</label>
+                <select id="gender" name="gender" required class="w-full mt-2 p-3 border border-[#8D6E63] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D32F2F]">
+                    <option value="male">ชาย</option>
+                    <option value="female">หญิง</option>
+                    <option value="other">อื่นๆ</option>
+                </select>
+            </div>
+            <div class="mb-6">
+                <label for="admissionYear" class="block text-[#5D4037] font-medium">ปีการศึกษาที่เข้าศึกษา:</label>
+                <input type="number" id="admissionYear" name="admissionYear" placeholder="ระบุปีการศึกษา" required class="w-full mt-2 p-3 border border-[#8D6E63] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D32F2F]">
+            </div>
+            <div class="mb-6">
+                <label for="address" class="block text-[#5D4037] font-medium">ที่อยู่:</label>
+                <textarea id="address" name="address" rows="4" placeholder="ระบุที่อยู่ของคุณ" required class="w-full mt-2 p-3 border border-[#8D6E63] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D32F2F]"></textarea>
+            </div>
+            <div class="mb-6">
+                <label for="email" class="block text-[#5D4037] font-medium">อีเมล:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required class="w-full mt-2 p-3 border border-[#8D6E63] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D32F2F]">
+            </div>
+            <div class="mb-6">
+                <label for="phone" class="block text-[#5D4037] font-medium">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" placeholder="ระบุเบอร์โทรศัพท์" required class="w-full mt-2 p-3 border border-[#8D6E63] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D32F2F]">
+            </div>
+            <div class="mb-6">
+                <label for="program" class="block text-[#5D4037] font-medium">ชื่อหลักสูตร:</label>
+                <select id="program" name="program" required class="w-full mt-2 p-3 border border-[#8D6E63] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D32F2F]">
+                    <option value="it">IT</option>
+                    <option value="is">IS</option>
+                </select>
+            </div>
+            <div class="mb-6">
+                <label for="photo" class="block text-[#5D4037] font-medium">อัปโหลดรูปถ่าย:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required class="w-full mt-2 p-3 border border-[#8D6E63] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D32F2F]">
+            </div>
+            <div class="flex justify-between">
+                <button type="submit" class="bg-[#D32F2F] text-white py-2 px-6 rounded-lg hover:bg-[#B71C1C] focus:outline-none focus:ring-2 focus:ring-[#F44336]">ส่งข้อมูล</button>
+                <button type="button" onclick="window.location.href='index.html'" class="bg-[#8D6E63] text-white py-2 px-6 rounded-lg hover:bg-[#6D4C41] focus:outline-none focus:ring-2 focus:ring-[#A1887F]">กลับ</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="text-center mt-8">
+        <p class="text-[#6D4C41]">&copy; 2025 สวิส บุตรรักษ์</p>
+    </footer>
+</body>
+</html>
